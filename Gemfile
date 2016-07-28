@@ -3,10 +3,10 @@ source 'https://rubygems.org'
 gem 'devise', '~> 4.1'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
+gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'rails', '~> 5.0.0'
 gem 'sass-rails', '~> 5.0'
-gem 'pg', '~> 0.18'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 
@@ -15,6 +15,10 @@ group :development, :test do
 end
 
 group :development do
+  gem 'awesome_print'
+  gem 'better_errors'
+  gem 'growl', require: false
+  gem 'guard-rspec', require: false
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
