@@ -6,7 +6,7 @@ gem 'jquery-rails'
 gem 'puma', '~> 3.0'
 gem 'rails', '~> 5.0.0'
 gem 'sass-rails', '~> 5.0'
-gem 'sqlite3'
+gem 'pg', '~> 0.18'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 
@@ -23,6 +23,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'email_spec'
   gem 'factory_girl_rails', '~> 4.7.0'
   gem 'launchy'
   gem 'rails-controller-testing'
